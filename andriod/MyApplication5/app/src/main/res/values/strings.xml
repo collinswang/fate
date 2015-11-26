@@ -1,0 +1,16 @@
+<resources>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="app_name">命运</string>
+    <string name="test_list">列表</string>
+    <string name="yinyuan">观音灵签</string>
+    <string name="chenggusuanming">称骨算命</string>
+
+    <string name="sbm">算命</string>
+    <string name="fate">命运</string>
+
+
+</resources>
