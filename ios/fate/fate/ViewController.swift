@@ -17,18 +17,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let button1 = UIButton.buttonWithType(.System) as! UIButton
-        button1.frame = CGRectMake(self.view.frame.width/2-200, 50, 200, 30)
+        button1.frame = CGRectMake(self.view.frame.width/2-50, 150, 100, 30)
         button1.setTitle("称骨算命", forState: UIControlState.Normal)
         button1.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
         button1.tag = 1
+        button1.layer.cornerRadius = 4.0
+        button1.layer.borderWidth = 1
+        button1.layer.borderColor = UIColor.purpleColor().CGColor
         
         
         let button2 = UIButton.buttonWithType(.System) as! UIButton
-        button2.frame = CGRectMake(self.view.frame.width/2-200, 150, 200, 30)
+        button2.frame = CGRectMake(self.view.frame.width/2-50, 250, 100, 30)
         button2.setTitle("观音灵签", forState: UIControlState.Normal)
         button2.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
         button2.tag = 2
+        button2.layer.cornerRadius = 4.0
+        button2.layer.borderWidth = 1
         
+    
  
         self.view.addSubview(button1)
         self.view.addSubview(button2)
@@ -42,9 +48,7 @@ class ViewController: UIViewController {
     func buttonAction(sender: UIButton) {
         
         let num = sender.tag
-        println("haoma \(num)" )
-
-        
+                
         switch num {
         case 1:
             self.presentViewController(ssViewController(), animated: false, completion: nil)

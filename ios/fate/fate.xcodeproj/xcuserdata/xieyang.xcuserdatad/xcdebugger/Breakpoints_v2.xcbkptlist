@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fate/ViewController.swift"
-            timestampString = "470218062.771696"
+            timestampString = "470305836.497662"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "buttonAction(_:)"
             landmarkType = "5">
          </BreakpointContent>

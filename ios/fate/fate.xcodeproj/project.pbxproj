@@ -13,9 +13,10 @@
 		912FA1AC1C0698C700E085D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912FA1AB1C0698C700E085D2 /* Images.xcassets */; };
 		912FA1AF1C0698C700E085D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912FA1AD1C0698C700E085D2 /* LaunchScreen.xib */; };
 		912FA1BB1C0698C700E085D2 /* fateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FA1BA1C0698C700E085D2 /* fateTests.swift */; };
-		912FA1C71C069F6F00E085D2 /* fdsfs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FA1C61C069F6F00E085D2 /* fdsfs.swift */; };
+		912FA1C71C069F6F00E085D2 /* ChengguHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FA1C61C069F6F00E085D2 /* ChengguHelper.swift */; };
 		912FA1CB1C06A6A500E085D2 /* ssViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FA1CA1C06A6A500E085D2 /* ssViewController.swift */; };
 		912FA1CD1C06ABD800E085D2 /* GuanyinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FA1CC1C06ABD800E085D2 /* GuanyinViewController.swift */; };
+		918D60621C07F67800FD3B77 /* Linqian.plist in Resources */ = {isa = PBXBuildFile; fileRef = 918D60611C07F67800FD3B77 /* Linqian.plist */; };
 		91E60F961C06DB25006F85EC /* baseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E60F951C06DB25006F85EC /* baseClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,9 +41,10 @@
 		912FA1B41C0698C700E085D2 /* fateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912FA1B91C0698C700E085D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		912FA1BA1C0698C700E085D2 /* fateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fateTests.swift; sourceTree = "<group>"; };
-		912FA1C61C069F6F00E085D2 /* fdsfs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fdsfs.swift; sourceTree = "<group>"; };
+		912FA1C61C069F6F00E085D2 /* ChengguHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChengguHelper.swift; path = ../ChengguHelper.swift; sourceTree = "<group>"; };
 		912FA1CA1C06A6A500E085D2 /* ssViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ssViewController.swift; sourceTree = "<group>"; };
 		912FA1CC1C06ABD800E085D2 /* GuanyinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuanyinViewController.swift; sourceTree = "<group>"; };
+		918D60611C07F67800FD3B77 /* Linqian.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Linqian.plist; path = ../../../../../../Downloads/Linqian.plist; sourceTree = "<group>"; };
 		91E60F951C06DB25006F85EC /* baseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = baseClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +69,6 @@
 		912FA1961C0698C700E085D2 = {
 			isa = PBXGroup;
 			children = (
-				912FA1C61C069F6F00E085D2 /* fdsfs.swift */,
 				912FA1A11C0698C700E085D2 /* fate */,
 				912FA1B71C0698C700E085D2 /* fateTests */,
 				912FA1A01C0698C700E085D2 /* Products */,
@@ -86,6 +87,8 @@
 		912FA1A11C0698C700E085D2 /* fate */ = {
 			isa = PBXGroup;
 			children = (
+				912FA1C61C069F6F00E085D2 /* ChengguHelper.swift */,
+				918D60611C07F67800FD3B77 /* Linqian.plist */,
 				91E60F951C06DB25006F85EC /* baseClass.swift */,
 				912FA1CC1C06ABD800E085D2 /* GuanyinViewController.swift */,
 				912FA1CA1C06A6A500E085D2 /* ssViewController.swift */,
@@ -206,6 +209,7 @@
 			files = (
 				912FA1AA1C0698C700E085D2 /* Main.storyboard in Resources */,
 				912FA1AF1C0698C700E085D2 /* LaunchScreen.xib in Resources */,
+				918D60621C07F67800FD3B77 /* Linqian.plist in Resources */,
 				912FA1AC1C0698C700E085D2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,7 +230,7 @@
 			files = (
 				912FA1CD1C06ABD800E085D2 /* GuanyinViewController.swift in Sources */,
 				912FA1CB1C06A6A500E085D2 /* ssViewController.swift in Sources */,
-				912FA1C71C069F6F00E085D2 /* fdsfs.swift in Sources */,
+				912FA1C71C069F6F00E085D2 /* ChengguHelper.swift in Sources */,
 				912FA1A71C0698C700E085D2 /* ViewController.swift in Sources */,
 				912FA1A51C0698C700E085D2 /* AppDelegate.swift in Sources */,
 				91E60F961C06DB25006F85EC /* baseClass.swift in Sources */,
