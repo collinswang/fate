@@ -35,19 +35,20 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
             year.append("\(index)年" )
         }
         
-        var width = self.view.frame.width
-                
-        let laber = UILabel() as UILabel
-        laber.frame = CGRectMake(width/2-50, 50, 100, 30)
-        laber.text = "woqu"
-        laber.textColor = UIColor.redColor()
-        laber.textAlignment = NSTextAlignment.Center
-        laber.layer.cornerRadius = 4.0
-        laber.layer.borderWidth = 1
-        self.view.addSubview(laber)
+        let width = self.view.frame.width
         
+        self.navigationItem.title = "称骨算命"
+        let backItem:UIBarButtonItem = UIBarButtonItem(title: "< 返回", style: UIBarButtonItemStyle.Plain, target: self, action: "back")
+        self.navigationItem.leftBarButtonItem = backItem
         
-        txt.frame = CGRectMake(width/2-200, 100, 200, 30)
+        let navigationBar = UINavigationBar()
+        navigationBar.frame = CGRectMake(0, 0, width, 60)
+        navigationBar.pushNavigationItem(self.navigationItem, animated: false)
+        
+        self.view.addSubview(navigationBar)
+           
+        
+        txt.frame = CGRectMake(width/2-100, 100, 200, 30)
         txt.placeholder = "请输入用户名"
         txt.layer.cornerRadius = 4.0
         txt.layer.borderWidth = 1
@@ -55,43 +56,34 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         
         
         
-        phone.frame = CGRectMake(width/2-200, 150, 200, 30)
+        phone.frame = CGRectMake(width/2-100, 150, 200, 30)
         phone.placeholder = "请输入手机号码"
         phone.layer.cornerRadius = 4.0
         phone.layer.borderWidth = 1
 //        phone.borderStyle = UITextBorderStyle.RoundedRect;
         self.view.addSubview(phone)
         
-        pickerView = UIPickerView(frame: CGRectMake(0, 200, width, 30))
+        pickerView = UIPickerView(frame: CGRectMake(0, 200, width, 50))
         pickerView.delegate = self
         pickerView.dataSource = self
         self.view.addSubview(pickerView)
         
-        let btn = UIButton.buttonWithType(.System) as! UIButton
-        btn.frame = CGRectMake(width/2-200, 350, 200, 30)
+        let btn = UIButton(type: .System)
+        btn.frame = CGRectMake(width/2-100, 350, 200, 30)
         btn.setTitle("算命", forState: UIControlState.Normal)
         btn.layer.cornerRadius = 4.0
         btn.layer.borderWidth = 1
         btn.addTarget(self, action: "getFate", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(btn)
         
-        info.frame = CGRectMake(width/2-200, 400, width-40, 300)
+        info.frame = CGRectMake(20, 400, width-40, 300)
         info.layer.cornerRadius = 4.0
         info.layer.borderWidth = 1
         info.editable = false
         info.layer.borderColor = UIColor.purpleColor().CGColor
         self.view.addSubview(info)
         
-        
-        let backBtn = UIButton.buttonWithType(.System) as! UIButton
-        backBtn.setTitle("返回", forState: UIControlState.Normal)
-        backBtn.frame = CGRectMake(width/2-200, 50, 100, 30)
-        backBtn.addTarget(self,action: "back", forControlEvents: UIControlEvents.TouchUpInside)
-        backBtn.layer.cornerRadius = 4.0
-        backBtn.layer.borderWidth = 1
-
-        self.view.addSubview(backBtn)
-        
+      
         
         self.view.backgroundColor = UIColor.whiteColor();
 
@@ -118,9 +110,9 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
 //        var resu = cgu.gu(yearIndex, month: monthIndex, day: weekIndex, hour: hourIndex)
         
         
-        let msg = txt.text + phone.text + year[yearIndex] + month[monthIndex] + week[weekIndex] + hour[hourIndex]
+        let msg = txt.text! + phone.text! + year[yearIndex] + month[monthIndex] + week[weekIndex] + hour[hourIndex]
         info.text = msg as String
-        println(msg)
+        print(msg)
     }
     
     // 设置列数
@@ -148,7 +140,7 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     }
     
     // 设置每行具体内容（titleForRow 和 viewForRow 二者实现其一即可）
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if(component == 0){
             return year[row]
         }
@@ -161,22 +153,22 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         if(component == 3){
             return hour[row]
         }
-        return nil
+        return ""
     }
     
     // 选中行的操作
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if(component == 0){
-            println("year selected: \(year[row])")
+            print("year selected: \(year[row])")
         }
         if(component == 1){
-            println("month selected: \(month[row])")
+            print("month selected: \(month[row])")
         }
         if(component == 2){
-            println("week selected: \(week[row])")
+            print("week selected: \(week[row])")
         }
         if(component == 3){
-            println("hour selected: \(hour[row])")
+            print("hour selected: \(hour[row])")
         }
     }
 
