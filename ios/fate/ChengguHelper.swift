@@ -22,9 +22,9 @@ class ChengguHelper {
     
     
     func gu(year: Int, month: Int , day: Int, hour: Int) ->String{
-        let count = years[year] + months[month] + days[day] + hours[hour]
+        var count = years[year] + months[month] + days[day] + hours[hour]
         let msg = "你的命是\(count)"
-        print(msg)
+        println(msg)
         return msg
     }
     

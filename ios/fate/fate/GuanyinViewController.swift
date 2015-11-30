@@ -22,31 +22,37 @@ class GuanyinViewController: UIViewController {
         super.viewDidLoad()
         
         let msg = self.base.cacheGetString("msg")
+
         
-        let width = self.view.frame.width
+        let laber = UILabel() as UILabel
+        laber.frame = CGRectMake(200, 200, 200, 200)
+        laber.text = msg
+        laber.textColor = UIColor.redColor()
+     //   self.view.addSubview(laber)
         
-        self.navigationItem.title = msg
-        let backItem:UIBarButtonItem = UIBarButtonItem(title: "< 返回", style: UIBarButtonItemStyle.Plain, target: self, action: "back")
-        self.navigationItem.leftBarButtonItem = backItem
-//        self.navigationItem.leftBarButtonItems?.append(backItem)
         
-        let navigationBar = UINavigationBar()
-        navigationBar.frame = CGRectMake(0, 0, width, 60)
-        navigationBar.pushNavigationItem(self.navigationItem, animated: false)
-        
-        self.view.addSubview(navigationBar)
+        let backBtn = UIButton.buttonWithType(.System) as! UIButton
+        backBtn.setTitle("返回", forState: UIControlState.Normal)
+        backBtn.frame = CGRectMake(self.view.frame.width/2-200, 50, 100, 30)
+        backBtn.addTarget(self,action: "back", forControlEvents: UIControlEvents.TouchUpInside)
+        backBtn.layer.borderWidth = 1
+        backBtn.layer.cornerRadius = 4.0
+        self.view.addSubview(backBtn)
         
     
-        let btnQian = UIButton(type: .System)
+        let btnQian = UIButton.buttonWithType(.System) as! UIButton
         btnQian.setTitle("求签", forState: UIControlState.Normal)
-        btnQian.frame = CGRectMake(width/2-50, 80, 100, 30)
+        btnQian.frame = CGRectMake(self.view.frame.width/2-50, 50, 100, 30)
         btnQian.addTarget(self, action: "showMsg", forControlEvents: UIControlEvents.TouchUpInside)
         btnQian.layer.borderWidth = 1
         btnQian.layer.cornerRadius = 4.0
         self.view.addSubview(btnQian)
         
-         
-        text.frame = CGRectMake(10, 150, width-20, 400)
+        
+       // lable.frame = CGRectMake(self.view.frame.width/2-50, 150, 200, 30)
+        // self.view.addSubview(lable)
+        
+        text.frame = CGRectMake(self.view.frame.width/2-200, 150, self.view.frame.width-20, 400)
 //        CGRectMake(<#x: CGFloat#>, <#y: CGFloat#>, width: CGFloat, <#height: CGFloat#>)
         text.textColor = UIColor.redColor()
         text.font = UIFont.boldSystemFontOfSize(30)
@@ -84,13 +90,13 @@ class GuanyinViewController: UIViewController {
         
         let path = NSBundle.mainBundle().pathForResource("Linqian.plist", ofType: nil)
         // print(path)
-        let myDict = NSDictionary(contentsOfFile: path!)
+        var myDict = NSDictionary(contentsOfFile: path!)
 
-        print(myDict, terminator: "")
+        print(myDict)
        
-        print("\n---------------------------\n", terminator: "")
+        print("\n---------------------------\n")
         let showMsg = myDict?.objectForKey("\(num)") as! String
-        print(showMsg, terminator: "")
+        print(showMsg)
         
         lable.text = showMsg
         
