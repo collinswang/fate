@@ -12,8 +12,6 @@ class GuanyinViewController: UIViewController {
     
     var base: bassClass = bassClass()
     
-    let lable = UILabel()
-    
     let text = UITextView()
     
     
@@ -80,19 +78,14 @@ class GuanyinViewController: UIViewController {
     func showMsg() ->String{
         let num = rand(101, min: 1)
         let msg = "随机数时：\(num)"
-        lable.text = msg
+        
         
         let path = NSBundle.mainBundle().pathForResource("Linqian.plist", ofType: nil)
-        // print(path)
         let myDict = NSDictionary(contentsOfFile: path!)
-
-        print(myDict, terminator: "")
        
         print("\n---------------------------\n", terminator: "")
         let showMsg = myDict?.objectForKey("\(num)") as! String
-        print(showMsg, terminator: "")
         
-        lable.text = showMsg
         
         text.text = showMsg
         

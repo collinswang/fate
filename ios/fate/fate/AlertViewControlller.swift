@@ -33,7 +33,7 @@ class AlertViewControlller:  UIViewController  {
         self.view.addSubview(navigationBar)
         
         // 定义一个按钮，显示最简单的 Alert
-        let button1 = UIButton(type: .System) as UIButton
+        let button1 = UIButton(type: .System)
         button1.frame = CGRectMake(width/2 - 75, 80, 150, 30)
         button1.setTitle("最简单的 Alert", forState: UIControlState.Normal)
         button1.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
@@ -43,7 +43,7 @@ class AlertViewControlller:  UIViewController  {
         button1.tag = 1
         
         // 定义一个按钮，显示带文本框的 Alert
-        let button2 = UIButton(type: .System) as UIButton
+        let button2 = UIButton(type: .System)
         button2.frame = CGRectMake(width/2 - 75, 180, 150, 30)
         button2.setTitle("带文本框的 Alert", forState: UIControlState.Normal)
         button2.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
@@ -53,7 +53,7 @@ class AlertViewControlller:  UIViewController  {
         button2.tag = 2
         //
         // 定义一个按钮，显示上拉菜单
-        let button3 = UIButton(type: .System) as UIButton
+        let button3 = UIButton(type: .System)
         button3.frame = CGRectMake(width/2 - 75, 280, 150, 30)
         button3.setTitle("上拉菜单", forState: UIControlState.Normal)
         button3.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
@@ -112,12 +112,13 @@ class AlertViewControlller:  UIViewController  {
         let loginAction = UIAlertAction(title: "login", style: UIAlertActionStyle.Default) {
             (action: UIAlertAction!) -> Void in
             
-            let msg = (self.alert2.textFields?.first?.text)! + (self.alert2.textFields?.last?.text)!
+            let msg = (self.alert2.textFields?.first?.text )! + (self.alert2.textFields?.last?.text)!
+//            let msg = "show nothing"
             
             showMsg.text = msg
             
             if(((self.alert2.textFields?.isEmpty) == nil)) {
-                let name = (self.alert2.textFields?.first)! as UITextField
+                let name = (self.alert2.textFields?.first)! 
                 //   let pwd = (self.alert2.textFields?.last)! as UITextField
                 //            let password = self.alert2.textFields!.last! as UITextField
                 

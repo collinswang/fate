@@ -18,9 +18,10 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     var info = UITextView()
     
     var month = [String]()
-    var week = [String]()
+//    var week = [String]()
     var year = [String]()
     var hour = [String]()
+    var day = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +29,11 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         
         // 初始化数据
         month = ["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"]
-        week = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+      //  week = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
         hour = ["子时","丑时","寅时","卯时","辰时","巳时","午时","未时","申时","酉时","戌时","亥时"]
+        day = ["初一","初二","初三","初四","初五","初六","初七","初八","初九","初十","十一","十二","十三","十四","十五","十六","十七","十八","十九","二十","廿一","廿二","廿三","廿四","廿五","廿六","廿七","廿八","廿九","三十"]
         
-        for var index=1900; index < 2015; ++index {
+        for var index=1924; index < 2015; ++index {
             year.append("\(index)年" )
         }
         
@@ -106,13 +108,14 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         let weekIndex = pickerView.selectedRowInComponent(2)
         let hourIndex = pickerView.selectedRowInComponent(3)
         
-//        var cgu: ChengguHelper = ChengguHelper()
-//        var resu = cgu.gu(yearIndex, month: monthIndex, day: weekIndex, hour: hourIndex)
+        print(yearIndex)
+        let cgu: ChengguHelper = ChengguHelper()
+        let resu = cgu.gu(yearIndex+1, month: monthIndex+1, day: weekIndex+1, hour: hourIndex+1)
         
         
-        let msg = txt.text! + phone.text! + year[yearIndex] + month[monthIndex] + week[weekIndex] + hour[hourIndex]
-        info.text = msg as String
-        print(msg)
+//        let msg = txt.text! + phone.text! + year[yearIndex] + month[monthIndex] + day[weekIndex] + hour[hourIndex]
+        info.text = resu.msg + "\n" + resu.res
+        print(resu)
     }
     
     // 设置列数
@@ -131,10 +134,10 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
             return month.count
         }
         if(component == 2){
-            return week.count
+            return day.count
         }
         if(component == 3){
-            return week.count
+            return hour.count
         }
         return 0
     }
@@ -148,7 +151,7 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
             return month[row]
         }
         if(component == 2){
-            return week[row]
+            return day[row]
         }
         if(component == 3){
             return hour[row]
@@ -159,16 +162,16 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     // 选中行的操作
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if(component == 0){
-            print("year selected: \(year[row])")
+//            print("year selected: \(year[row])")
         }
         if(component == 1){
-            print("month selected: \(month[row])")
+//            print("month selected: \(month[row])")
         }
         if(component == 2){
-            print("week selected: \(week[row])")
+//            print("week selected: \(day[row])")
         }
         if(component == 3){
-            print("hour selected: \(hour[row])")
+//            print("hour selected: \(hour[row])")
         }
     }
 

@@ -31,7 +31,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
             endingLineNumber = "62"
-            landmarkName = "buttonAction(_:)"
+            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "fate/TableViewController.swift"
-            timestampString = "470543588.544052"
+            filePath = "fate/StringUtil.swift"
+            timestampString = "470561152.940847"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "length()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

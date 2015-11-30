@@ -134,10 +134,10 @@ class TableViewController: UIViewController,UITableViewDelegate, UITableViewData
     //加载数据
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         
-        let cell = tableView .dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView .dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) 
         let row=indexPath.row as Int
         cell.textLabel!.text=self.items[row]
-        cell.imageView!.image = UIImage(named:"green.jpg")
+//        cell.imageView!.image = UIImage(named:"green.jpg")
         
         return cell;
         
