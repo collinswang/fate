@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>053279DD-F3F2-455A-9DAA-9F90CA44C20E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>fate</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>8251F6E4F87F48BA572F2A9D74BDD2A86F2D0793</key>
 		<string>https://github.com/freecullen/fate.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ios/fate/fate.xcodeproj</string>
+	<string>ios/fate/fate.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8251F6E4F87F48BA572F2A9D74BDD2A86F2D0793</key>

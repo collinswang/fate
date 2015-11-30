@@ -10,13 +10,13 @@ import Foundation
 
 class bassClass {
     func cacheSetString(key: String, value: String){
-        var userInfo = NSUserDefaults()
+        let userInfo = NSUserDefaults()
         userInfo.setValue(value, forKey: key)
     }
     
     func cacheGetString(key: String) ->String{
-        var userInfo = NSUserDefaults()
-        var tmpSign = userInfo.stringForKey(key)
+        let userInfo = NSUserDefaults()
+        let tmpSign = userInfo.stringForKey(key)
         return tmpSign!
     }
 }

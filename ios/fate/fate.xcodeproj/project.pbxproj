@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D03D8FF1C0A922900BF1FA9 /* green.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D03D8FE1C0A922900BF1FA9 /* green.jpg */; };
+		3D66576B1C09615A0007E7CA /* AlertViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D66576A1C09615A0007E7CA /* AlertViewControlller.swift */; };
+		3D66576F1C0968F50007E7CA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D66576E1C0968F50007E7CA /* TableViewController.swift */; };
 		912FA1A51C0698C700E085D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FA1A41C0698C700E085D2 /* AppDelegate.swift */; };
 		912FA1A71C0698C700E085D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FA1A61C0698C700E085D2 /* ViewController.swift */; };
 		912FA1AA1C0698C700E085D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912FA1A81C0698C700E085D2 /* Main.storyboard */; };
@@ -16,7 +19,7 @@
 		912FA1C71C069F6F00E085D2 /* ChengguHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FA1C61C069F6F00E085D2 /* ChengguHelper.swift */; };
 		912FA1CB1C06A6A500E085D2 /* ssViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FA1CA1C06A6A500E085D2 /* ssViewController.swift */; };
 		912FA1CD1C06ABD800E085D2 /* GuanyinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FA1CC1C06ABD800E085D2 /* GuanyinViewController.swift */; };
-		918D60621C07F67800FD3B77 /* Linqian.plist in Resources */ = {isa = PBXBuildFile; fileRef = 918D60611C07F67800FD3B77 /* Linqian.plist */; };
+		91D2BAC11C0BED1C0009A9F5 /* Linqian.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91D2BAC01C0BED1C0009A9F5 /* Linqian.plist */; };
 		91E60F961C06DB25006F85EC /* baseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E60F951C06DB25006F85EC /* baseClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D03D8FE1C0A922900BF1FA9 /* green.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = green.jpg; path = ../../../../../../Pictures/green.jpg; sourceTree = "<group>"; };
+		3D66576A1C09615A0007E7CA /* AlertViewControlller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewControlller.swift; sourceTree = "<group>"; };
+		3D66576E1C0968F50007E7CA /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		912FA19F1C0698C700E085D2 /* fate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		912FA1A31C0698C700E085D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		912FA1A41C0698C700E085D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +50,7 @@
 		912FA1C61C069F6F00E085D2 /* ChengguHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChengguHelper.swift; path = ../ChengguHelper.swift; sourceTree = "<group>"; };
 		912FA1CA1C06A6A500E085D2 /* ssViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ssViewController.swift; sourceTree = "<group>"; };
 		912FA1CC1C06ABD800E085D2 /* GuanyinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuanyinViewController.swift; sourceTree = "<group>"; };
-		918D60611C07F67800FD3B77 /* Linqian.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Linqian.plist; path = ../../../../../../Downloads/Linqian.plist; sourceTree = "<group>"; };
+		91D2BAC01C0BED1C0009A9F5 /* Linqian.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Linqian.plist; path = ../../../../../../Downloads/Linqian.plist; sourceTree = "<group>"; };
 		91E60F951C06DB25006F85EC /* baseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = baseClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,8 +93,8 @@
 		912FA1A11C0698C700E085D2 /* fate */ = {
 			isa = PBXGroup;
 			children = (
+				3D66576A1C09615A0007E7CA /* AlertViewControlller.swift */,
 				912FA1C61C069F6F00E085D2 /* ChengguHelper.swift */,
-				918D60611C07F67800FD3B77 /* Linqian.plist */,
 				91E60F951C06DB25006F85EC /* baseClass.swift */,
 				912FA1CC1C06ABD800E085D2 /* GuanyinViewController.swift */,
 				912FA1CA1C06A6A500E085D2 /* ssViewController.swift */,
@@ -98,6 +104,7 @@
 				912FA1AB1C0698C700E085D2 /* Images.xcassets */,
 				912FA1AD1C0698C700E085D2 /* LaunchScreen.xib */,
 				912FA1A21C0698C700E085D2 /* Supporting Files */,
+				3D66576E1C0968F50007E7CA /* TableViewController.swift */,
 			);
 			path = fate;
 			sourceTree = "<group>";
@@ -105,6 +112,8 @@
 		912FA1A21C0698C700E085D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				91D2BAC01C0BED1C0009A9F5 /* Linqian.plist */,
+				3D03D8FE1C0A922900BF1FA9 /* green.jpg */,
 				912FA1A31C0698C700E085D2 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -171,11 +180,14 @@
 		912FA1971C0698C700E085D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = xieyang;
 				TargetAttributes = {
 					912FA19E1C0698C700E085D2 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 6V8FQJXWVZ;
 					};
 					912FA1B31C0698C700E085D2 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -208,8 +220,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				912FA1AA1C0698C700E085D2 /* Main.storyboard in Resources */,
+				3D03D8FF1C0A922900BF1FA9 /* green.jpg in Resources */,
 				912FA1AF1C0698C700E085D2 /* LaunchScreen.xib in Resources */,
-				918D60621C07F67800FD3B77 /* Linqian.plist in Resources */,
+				91D2BAC11C0BED1C0009A9F5 /* Linqian.plist in Resources */,
 				912FA1AC1C0698C700E085D2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,9 +244,11 @@
 				912FA1CD1C06ABD800E085D2 /* GuanyinViewController.swift in Sources */,
 				912FA1CB1C06A6A500E085D2 /* ssViewController.swift in Sources */,
 				912FA1C71C069F6F00E085D2 /* ChengguHelper.swift in Sources */,
+				3D66576F1C0968F50007E7CA /* TableViewController.swift in Sources */,
 				912FA1A71C0698C700E085D2 /* ViewController.swift in Sources */,
 				912FA1A51C0698C700E085D2 /* AppDelegate.swift in Sources */,
 				91E60F961C06DB25006F85EC /* baseClass.swift in Sources */,
+				3D66576B1C09615A0007E7CA /* AlertViewControlller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +311,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -311,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -349,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -360,9 +376,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = fate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cullen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -370,9 +392,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = fate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cullen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -390,6 +418,7 @@
 				);
 				INFOPLIST_FILE = fateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cullen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fate.app/fate";
 			};
@@ -405,6 +434,7 @@
 				);
 				INFOPLIST_FILE = fateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cullen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fate.app/fate";
 			};
