@@ -63,6 +63,35 @@ class ViewController: UIViewController {
         button4.layer.cornerRadius = 4.0
         button4.layer.borderWidth = 1
         self.view.addSubview(button4)
+        
+        let button5 = UIButton(type: .System)
+        button5.frame = CGRectMake(width/2-50, 350, 100, 30)
+        button5.setTitle("动画效果", forState: UIControlState.Normal)
+        button5.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        button5.tag = 5
+        button5.layer.cornerRadius = 4.0
+        button5.layer.borderWidth = 1
+        self.view.addSubview(button5)
+        
+        let button6 = UIButton(type: .System)
+        button6.frame = CGRectMake(width/2-50, 400, 100, 30)
+        button6.setTitle("转盘", forState: UIControlState.Normal)
+        button6.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        button6.tag = 6
+        button6.layer.cornerRadius = 4.0
+        button6.layer.borderWidth = 1
+        self.view.addSubview(button6)
+        
+        let dateFormatter:NSDateFormatter = NSDateFormatter();
+        dateFormatter.dateFormat = "yyyy/MM/dd";
+        let dateString:String = dateFormatter.stringFromDate(NSDate());
+        var dates:[String] = dateString.componentsSeparatedByString("/")
+        let currentYear  = dates[0]
+        let currentMonth = dates[1]
+        let currentDay   = dates[2]
+        
+         print("\(currentYear):\(currentMonth):\(currentDay)")
+        
     
  
      
@@ -94,14 +123,20 @@ class ViewController: UIViewController {
         case 4:
             self.presentViewController(TableViewController(), animated: false, completion: nil)
             break
+        case 5:
+            self.presentViewController(AnimationController(), animated: false, completion: nil)
+            break
+        case 6:
+            self.presentViewController(ZhuanPanController(), animated: false, completion: nil)
+            break
         default:
             break
         }
         
         
-                
-        
     }
+    
+
 
 
 }

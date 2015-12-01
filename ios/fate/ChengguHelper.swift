@@ -33,9 +33,7 @@ class ChengguHelper {
        
         let path = NSBundle.mainBundle().pathForResource("chenggusuanming.plist", ofType: nil)
         let myDict = NSDictionary(contentsOfFile: path!)
-        
-        print("\n---------------------------\n", terminator: "")
-      
+  
         let msg = recave(count)
         return (myDict?.objectForKey("\(count)") as! String, msg)
     }

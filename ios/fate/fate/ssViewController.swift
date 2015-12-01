@@ -33,9 +33,13 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         hour = ["子时","丑时","寅时","卯时","辰时","巳时","午时","未时","申时","酉时","戌时","亥时"]
         day = ["初一","初二","初三","初四","初五","初六","初七","初八","初九","初十","十一","十二","十三","十四","十五","十六","十七","十八","十九","二十","廿一","廿二","廿三","廿四","廿五","廿六","廿七","廿八","廿九","三十"]
         
-        for var index=1924; index < 2015; ++index {
+        for var index=1924; index < 2020; ++index {
             year.append("\(index)年" )
         }
+        
+        let indexYear = year.indexOf("2015年")
+        print("2015年的index是\(indexYear)")
+        
         
         let width = self.view.frame.width
         
@@ -69,6 +73,7 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         pickerView.delegate = self
         pickerView.dataSource = self
         self.view.addSubview(pickerView)
+        pickerView.selectRow(indexYear!, inComponent: 0, animated: false)
         
         let btn = UIButton(type: .System)
         btn.frame = CGRectMake(width/2-100, 350, 200, 30)
@@ -108,14 +113,14 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         let weekIndex = pickerView.selectedRowInComponent(2)
         let hourIndex = pickerView.selectedRowInComponent(3)
         
-        print(yearIndex)
+//        print(yearIndex)
         let cgu: ChengguHelper = ChengguHelper()
         let resu = cgu.gu(yearIndex+1, month: monthIndex+1, day: weekIndex+1, hour: hourIndex+1)
         
         
 //        let msg = txt.text! + phone.text! + year[yearIndex] + month[monthIndex] + day[weekIndex] + hour[hourIndex]
         info.text = resu.msg + "\n" + resu.res
-        print(resu)
+//        print(resu)
     }
     
     // 设置列数
