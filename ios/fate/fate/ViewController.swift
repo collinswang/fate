@@ -82,19 +82,17 @@ class ViewController: UIViewController {
         button6.layer.borderWidth = 1
         self.view.addSubview(button6)
         
-        let dateFormatter:NSDateFormatter = NSDateFormatter();
-        dateFormatter.dateFormat = "yyyy/MM/dd";
-        let dateString:String = dateFormatter.stringFromDate(NSDate());
-        var dates:[String] = dateString.componentsSeparatedByString("/")
-        let currentYear  = dates[0]
-        let currentMonth = dates[1]
-        let currentDay   = dates[2]
+        let ns:Date  = Date()
         
-         print("\(currentYear):\(currentMonth):\(currentDay)")
         
-    
- 
-     
+        let str = ns.getTodayInfo()
+        
+        let textV = UITextView()
+        textV.frame = CGRectMake(width/2-50, 470, 200, 200)
+        textV.layer.cornerRadius = 4.0
+        textV.layer.borderWidth = 1
+        textV.text = str
+        self.view.addSubview(textV)
     }
 
     override func didReceiveMemoryWarning() {

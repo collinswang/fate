@@ -56,7 +56,7 @@ class AnimationController: UIViewController {
         
         for i in 0..<dimension
         {
-            
+            print(i)
             y = 150
             for _ in 0..<dimension
             {

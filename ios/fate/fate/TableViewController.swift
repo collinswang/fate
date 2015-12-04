@@ -19,6 +19,7 @@ class TableViewController: UIViewController,UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         initView()
         setupRightBarButtonItem()
+        initDate() 
 //        setupLeftBarButtonItem()
 //        self.leftBtn!.userInteractionEnabled = true
         
@@ -164,6 +165,20 @@ class TableViewController: UIViewController,UITableViewDelegate, UITableViewData
         }
         alert1.addAction(okAction)
       
+    }
+    
+    func initDate() {
+        let url = "https://172.16.3.51:8443/user/query?name=super"
+        HttpSwift.get(url, params: ["get": "POST Network"], callback: { (data, response, error) -> Void in
+            let string = data
+            
+            //使用guard判断
+            guard error != nil else{
+                print(data)
+                print("GET带参数 请求成功 \(string)")
+                return
+            }
+        })
     }
     
     func back() {
