@@ -19,4 +19,6 @@ class bassClass {
         let tmpSign = userInfo.stringForKey(key)
         return tmpSign!
     }
+    
+  
 }

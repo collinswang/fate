@@ -6,7 +6,7 @@ var ioc = {
                 depose : 'close'
             },
             fields : {
-                url : "jdbc:mysql://172.16.1.5:3306/region_jmu",
+                url : "jdbc:mysql://172.16.1.5:3306/jmuv3",
                 username : "root",
                 password : "123.com",
                 testWhileIdle : true,

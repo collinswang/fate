@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         
         let button1 = UIButton(type: .System)
-        button1.frame = CGRectMake(width/2-50, 150, 100, 30)
+        button1.frame = CGRectMake(width*1/8, 270, width*1/3, 30)
         button1.setTitle("称骨算命", forState: UIControlState.Normal)
         button1.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
         button1.tag = 1
@@ -38,48 +38,53 @@ class ViewController: UIViewController {
         
         
         let button2 = UIButton(type: .System)
-        button2.frame = CGRectMake(width/2-50, 200, 100, 30)
+        button2.frame = CGRectMake(width*13/24, 270, width*1/3, 30)
         button2.setTitle("观音灵签", forState: UIControlState.Normal)
         button2.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
         button2.tag = 2
         button2.layer.cornerRadius = 4.0
         button2.layer.borderWidth = 1
+        button2.layer.borderColor = UIColor.purpleColor().CGColor
         self.view.addSubview(button2)
         
         let button3 = UIButton(type: .System)
-        button3.frame = CGRectMake(width/2-50, 250, 100, 30)
+        button3.frame = CGRectMake(width*1/8, 320,  width*1/3, 30)
         button3.setTitle("alert 事件", forState: UIControlState.Normal)
         button3.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
         button3.tag = 3
         button3.layer.cornerRadius = 4.0
         button3.layer.borderWidth = 1
+        button3.layer.borderColor = UIColor.purpleColor().CGColor
         self.view.addSubview(button3)
         
         let button4 = UIButton(type: .System)
-        button4.frame = CGRectMake(width/2-50, 300, 100, 30)
+        button4.frame = CGRectMake(width*13/24, 320,  width*1/3, 30)
         button4.setTitle("显示table", forState: UIControlState.Normal)
         button4.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
         button4.tag = 4
         button4.layer.cornerRadius = 4.0
         button4.layer.borderWidth = 1
+        button4.layer.borderColor = UIColor.purpleColor().CGColor
         self.view.addSubview(button4)
         
         let button5 = UIButton(type: .System)
-        button5.frame = CGRectMake(width/2-50, 350, 100, 30)
+        button5.frame = CGRectMake(width*1/8, 370,  width*1/3, 30)
         button5.setTitle("动画效果", forState: UIControlState.Normal)
         button5.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
         button5.tag = 5
         button5.layer.cornerRadius = 4.0
         button5.layer.borderWidth = 1
+        button5.layer.borderColor = UIColor.purpleColor().CGColor
         self.view.addSubview(button5)
         
         let button6 = UIButton(type: .System)
-        button6.frame = CGRectMake(width/2-50, 400, 100, 30)
+        button6.frame = CGRectMake(width*13/24, 370,  width*1/3, 30)
         button6.setTitle("转盘", forState: UIControlState.Normal)
         button6.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
         button6.tag = 6
         button6.layer.cornerRadius = 4.0
         button6.layer.borderWidth = 1
+        button6.layer.borderColor = UIColor.purpleColor().CGColor
         self.view.addSubview(button6)
         
         let ns:Date  = Date()
@@ -88,10 +93,13 @@ class ViewController: UIViewController {
         let str = ns.getTodayInfo()
         
         let textV = UITextView()
-        textV.frame = CGRectMake(width/2-50, 470, 200, 200)
+        textV.frame = CGRectMake(width*1/8, 100, width-40, 170)
         textV.layer.cornerRadius = 4.0
-        textV.layer.borderWidth = 1
+//        textV.layer.borderWidth = 1
+//        textV.layer.borderColor = UIColor.purpleColor().CGColor
         textV.text = str
+        textV.font = UIFont.boldSystemFontOfSize(20)
+        textV.editable = false
         self.view.addSubview(textV)
     }
 

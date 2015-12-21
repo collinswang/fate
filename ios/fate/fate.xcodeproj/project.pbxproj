@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910E947F1C1516C5005A9FAB /* TableDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E947E1C1516C5005A9FAB /* TableDetail.swift */; };
+		91A5F04B1C167E6C0044A458 /* TableViewControllerBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A5F04A1C167E6C0044A458 /* TableViewControllerBack.swift */; };
+		91C505721C16688500A47350 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C505711C16688500A47350 /* SwiftyJSON.swift */; };
 		91D22B501C0E936C00F873CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D22B4F1C0E936C00F873CB /* AppDelegate.swift */; };
 		91D22B521C0E936C00F873CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D22B511C0E936C00F873CB /* ViewController.swift */; };
 		91D22B551C0E936C00F873CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D22B531C0E936C00F873CB /* Main.storyboard */; };
@@ -54,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		910E947E1C1516C5005A9FAB /* TableDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDetail.swift; sourceTree = "<group>"; };
+		91A5F04A1C167E6C0044A458 /* TableViewControllerBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerBack.swift; sourceTree = "<group>"; };
+		91C505711C16688500A47350 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		91D22B4C1C0E936C00F873CB /* fate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D22B4F1C0E936C00F873CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91D22B511C0E936C00F873CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +145,7 @@
 		91D22B4E1C0E936C00F873CB /* fate */ = {
 			isa = PBXGroup;
 			children = (
+				91C505711C16688500A47350 /* SwiftyJSON.swift */,
 				91D22B7E1C0E945400F873CB /* AnimationController.swift */,
 				91D22B7D1C0E945400F873CB /* AlertViewControlller.swift */,
 				91D22B9B1C0E94D300F873CB /* ChengguHelper.swift */,
@@ -147,6 +154,8 @@
 				91FAFDE71C0E9AD700555652 /* imges */,
 				91D22B901C0E947600F873CB /* ssViewController.swift */,
 				91D22B911C0E947600F873CB /* TableViewController.swift */,
+				91A5F04A1C167E6C0044A458 /* TableViewControllerBack.swift */,
+				910E947E1C1516C5005A9FAB /* TableDetail.swift */,
 				91FAFDE81C0E9BC400555652 /* HttpSwift.swift */,
 				91D22B931C0E947600F873CB /* ZhuanPanController.swift */,
 				91D22B811C0E946A00F873CB /* baseClass.swift */,
@@ -343,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A5F04B1C167E6C0044A458 /* TableViewControllerBack.swift in Sources */,
 				91D22B8A1C0E946A00F873CB /* GuanyinViewController.swift in Sources */,
 				91D22B871C0E946A00F873CB /* baseClass.swift in Sources */,
 				91D22B801C0E945400F873CB /* AnimationController.swift in Sources */,
@@ -351,12 +361,14 @@
 				91FAFDF01C0EEAC200555652 /* Test.swift in Sources */,
 				91FAFDE91C0E9BC400555652 /* HttpSwift.swift in Sources */,
 				91D22B891C0E946A00F873CB /* EFAnimationViewController.swift in Sources */,
+				910E947F1C1516C5005A9FAB /* TableDetail.swift in Sources */,
 				91D22B941C0E947600F873CB /* LarnDate.swift in Sources */,
 				91D22B9C1C0E94D300F873CB /* ChengguHelper.swift in Sources */,
 				91FAFDEB1C0EC66B00555652 /* Date.swift in Sources */,
 				91D22B521C0E936C00F873CB /* ViewController.swift in Sources */,
 				91D22B7F1C0E945400F873CB /* AlertViewControlller.swift in Sources */,
 				91D22B501C0E936C00F873CB /* AppDelegate.swift in Sources */,
+				91C505721C16688500A47350 /* SwiftyJSON.swift in Sources */,
 				91FAFDED1C0EDA2100555652 /* StrutsTest.swift in Sources */,
 				91D22B9A1C0E947600F873CB /* ZhuanPanController.swift in Sources */,
 			);
@@ -499,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = fate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.cullen.fate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,6 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = fate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.cullen.fate;
 				PRODUCT_NAME = "$(TARGET_NAME)";

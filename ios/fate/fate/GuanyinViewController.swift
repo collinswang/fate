@@ -35,13 +35,17 @@ class GuanyinViewController: UIViewController {
         self.view.addSubview(navigationBar)
         
     
-        let btnQian = UIButton(type: .System)
-        btnQian.setTitle("求签", forState: UIControlState.Normal)
-        btnQian.frame = CGRectMake(width/2-50, 80, 100, 30)
-        btnQian.addTarget(self, action: "showMsg", forControlEvents: UIControlEvents.TouchUpInside)
-        btnQian.layer.borderWidth = 1
-        btnQian.layer.cornerRadius = 4.0
-        self.view.addSubview(btnQian)
+//        let btnQian = UIButton(type: .System)
+//        btnQian.setTitle("求签", forState: UIControlState.Normal)
+//        btnQian.frame = CGRectMake(width/2-50, 80, 100, 30)
+//        btnQian.addTarget(self, action: "showMsg", forControlEvents: UIControlEvents.TouchUpInside)
+//        btnQian.layer.borderWidth = 1
+//        btnQian.layer.cornerRadius = 4.0
+//        self.view.addSubview(btnQian)
+        
+        let label = UILabel(frame: CGRectMake(width/2-50, 80, 100, 30))
+        label.text = "摇一摇抽签"
+        self.view.addSubview(label)
         
          
         text.frame = CGRectMake(10, 150, width-20, 400)
@@ -57,6 +61,9 @@ class GuanyinViewController: UIViewController {
         
 
         self.view.backgroundColor = UIColor.whiteColor();
+        
+        UIApplication.sharedApplication().applicationSupportsShakeToEdit = true
+        self.becomeFirstResponder()
 
         // Do any additional setup after loading the view.
     }
@@ -92,18 +99,34 @@ class GuanyinViewController: UIViewController {
         return msg
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 
     
 
+    
+    override func canBecomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    
+    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        print("begain ...")
+    }
+    
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        if motion == .MotionShake {
+
+            let num = rand(101, min: 1)
+            
+            let path = NSBundle.mainBundle().pathForResource("Linqian.plist", ofType: nil)
+            let myDict = NSDictionary(contentsOfFile: path!)
+            let showMsg = myDict?.objectForKey("\(num)") as! String
+
+            text.text = showMsg
+        }
+    }
+
+    override func motionCancelled(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        print("over")
+    }
 
 }

@@ -392,8 +392,8 @@ class Date{
         
         let day = Int(res["lunarDay"]!)!
         
-        var msg = "阳历: \(res["solarYear"]!)-\(res["solarMonth"]!)-\(res["solarDay"]!)\n农历: \(res["chineseDateString"]!)时\n生肖: \(res["animalOfYear"]!)\n"
-        msg += "四柱: \(res["chineseYearName"]!) \(res["chineseMonthName"]!) \(res["chineseDayName"]!) \(res["chineseHourName"]!)\n"
+        var msg = "阳历: \(res["solarYear"]!)-\(res["solarMonth"]!)-\(res["solarDay"]!)\n农历: \(res["chineseDateString"]!)\n生肖: \(res["animalOfYear"]!)\n"
+        msg += "四柱: \(res["chineseYearName"]!) \(res["chineseMonthName"]!) \(res["chineseDayName"]!) \(res["chineseHourName"]!)时\n"
         if((res["solarTermInfo"]!) != "") {
             msg += "节气: \(res["solarTermInfo"]!)\n"
         }

@@ -1,12 +1,5 @@
-//
-//  HttpSwift.swift
-//  fate
-//
-//  Created by xieyang on 15/12/2.
-//  Copyright © 2015年 xieyang. All rights reserved.
-//
-
 import Foundation
+
 extension String {
     var nsdata: NSData {
         return self.dataUsingEncoding(NSUTF8StringEncoding)!
@@ -109,7 +102,11 @@ class HttpSwiftManager {
         }
     }
     func fireTask() {
-        
+//        print(self.url)
+//        print(self.method)
+//        print(self.params)
+//        print(self.request)
+//        print(self.session)
         task = session.dataTaskWithRequest(request,completionHandler: { (data, response, error) -> Void in
             self.callback(data: NSString(data: data!, encoding: NSUTF8StringEncoding), response: response, error: error)
         })
@@ -144,6 +141,7 @@ class HttpSwiftManager {
                 components += queryComponents("\(key)", value)
             }
         } else {
+//            print("any things")
             components.appendContentsOf([(escape(key), escape("\(value)"))])
         }
         
@@ -152,9 +150,11 @@ class HttpSwiftManager {
     
     
     func escape(string: String) -> String {
-        let legalURLCharactersToBeEscaped: CFStringRef = ":&=;+!@#$()',*"
-        
-        return CFURLCreateStringByAddingPercentEscapes(nil, string, nil, legalURLCharactersToBeEscaped, CFStringBuiltInEncodings.UTF8.rawValue) as String
+//        let legalURLCharactersToBeEscaped: CFStringRef = ":&=;+!@#$()',*"
+//        
+//        return CFURLCreateStringByAddingPercentEscapes(nil, string, nil, legalURLCharactersToBeEscaped, CFStringBuiltInEncodings.UTF8.rawValue) as String
+//        return string.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())!
+        return string
     }
     
     func fire() {

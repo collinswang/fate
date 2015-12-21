@@ -11,34 +11,27 @@ import UIKit
 class TableViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
     var tableView : UITableView?
-    var items = ["武汉","上海","北京","深圳","广州","重庆","香港","台海","天津"]
     var leftBtn:UIButton?
     var rightButtonItem:UIBarButtonItem?
+    var base: bassClass = bassClass()
+    
+    var json: JSON = JSON.null
+    var pager: JSON = JSON.null
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initDate()
         initView()
-        setupRightBarButtonItem()
-        initDate() 
-//        setupLeftBarButtonItem()
-//        self.leftBtn!.userInteractionEnabled = true
-        
-        // Do any additional setup after loading the view.
     }
     
     func initView(){
-//        self.title = "show table"
        
         let width = self.view.frame.width
         let height = self.view.frame.height
         self.navigationItem.title = "列表展示"
         let backItem:UIBarButtonItem = UIBarButtonItem(title: "< 返回", style: UIBarButtonItemStyle.Plain, target: self, action: "back")
-//        let addItem:UIBarButtonItem = UIBarButtonItem(title: "add", style: UIBarButtonItemStyle.Plain, target: self, action: "rightBarButtonItemClicked")
         self.navigationItem.leftBarButtonItem = backItem
-//        self.navigationItem.leftBarButtonItems?.append(backItem)
-//        self.navigationItem.leftBarButtonItems?.append(addItem)
-        
-//        let ui
+
        
         let navigationBar = UINavigationBar()
         navigationBar.frame = CGRectMake(0, 0, width, 60)
@@ -56,133 +49,134 @@ class TableViewController: UIViewController,UITableViewDelegate, UITableViewData
         self.tableView!.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.view.addSubview(self.tableView!)
         
-//        let backBtn = UIButton(type: .System)
-//        backBtn.setTitle("返回", forState: UIControlState.Normal)
-//        backBtn.frame = CGRectMake(20, 50, 100, 30)
-//        backBtn.addTarget(self,action: "back", forControlEvents: UIControlEvents.TouchUpInside)
-//        backBtn.layer.cornerRadius = 4.0
-//        backBtn.layer.borderWidth = 1
-//        
-//        self.view.addSubview(backBtn)
-        
-        
     }
-    //加左边按钮
-//    func setupLeftBarButtonItem() {
-//        self.leftBtn = UIButton(type: .System)
-//        self.leftBtn!.frame = CGRectMake(0,0,50,40)
-//        self.leftBtn?.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
-//        self.leftBtn?.setTitle("Edit", forState: UIControlState.Normal)
-//        self.leftBtn!.tag = 100
-//        self.leftBtn!.userInteractionEnabled = false
-//        self.leftBtn?.addTarget(self, action: "leftBarButtonItemClicked", forControlEvents: UIControlEvents.TouchUpInside)
-//        let barButtonItem = UIBarButtonItem(customView: self.leftBtn!)
-//        self.navigationItem.leftBarButtonItem = barButtonItem
-//    }
-    //左边按钮事件
-//    func leftBarButtonItemClicked()
-//    {
-//        print("leftBarButton")
-//        if (self.leftBtn!.tag == 100)
-//        {
-//            self.tableView?.setEditing(true, animated: true)
-//            self.leftBtn!.tag = 200
-//            self.leftBtn?.setTitle("Done", forState: UIControlState.Normal)
-//            //将增加按钮设置不能用
-//            self.rightButtonItem!.enabled=false
-//        }
-//        else
-//        {
-//            //恢复增加按钮
-//            self.rightButtonItem!.enabled=true
-//            self.tableView?.setEditing(false, animated: true)
-//            self.leftBtn!.tag = 100
-//            self.leftBtn?.setTitle("Edit", forState: UIControlState.Normal)
-//        }
-//        
-//    }
-    
-    //加右边按钮
-    func setupRightBarButtonItem()
-    {
-        self.rightButtonItem = UIBarButtonItem(title: "Add", style: UIBarButtonItemStyle.Plain, target: self,action: "rightBarButtonItemClicked")
-        self.navigationItem.rightBarButtonItem = self.rightButtonItem
-        
-    }
-    //增加事件
-    func rightBarButtonItemClicked()
-    {
-        
-        let row = self.items.count
-        let indexPath = NSIndexPath(forRow:row,inSection:0)
-        self.items.append("杭州")
-        self.tableView?.insertRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Left)
-        
-        
-    }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
     
     //总行数
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return self.items.count
+        
+        switch self.json.type {
+        case Type.Array, Type.Dictionary:
+            return self.json.count
+        default:
+            return 1
+        }
     }
     
     //加载数据
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         
         let cell = tableView .dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) 
-        let row=indexPath.row as Int
-        cell.textLabel!.text=self.items[row]
-//        cell.imageView!.image = UIImage(named:"green.jpg")
         
-        return cell;
+        let row = indexPath.row
+
+        switch self.json.type {
+        case .Array:
+            cell.textLabel?.text = json[row]["name"].string
+            cell.detailTextLabel?.text = json[row]["description"].string
+            let img = String(json[row]["image"].string!)
+            let url = "http://img1.ccjoin.com/\(img)"
+            let nsd = NSData(contentsOfURL:NSURL(string: url)!)
+            cell.imageView?.image = UIImage(data: nsd!)
+            
+        case .Dictionary:
+//            print("dic")
+            let key: AnyObject = Array(self.json.dictionaryValue.keys)[row]
+            let value = self.json["name"]
+            cell.textLabel?.text = "\(key)"
+            cell.detailTextLabel?.text = value.description
+        default:
+//            print("nothing")
+            cell.textLabel?.text = ""
+            cell.detailTextLabel?.text = self.json.description
+        }
+        
+        return cell
         
     }
     
-    //删除一行
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
-        let index=indexPath.row as Int
-        self.items.removeAtIndex(index)
-        self.tableView?.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Top)
-        NSLog("删除(indexPath.row)")
-    }
+
     //选择一行
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
 
-        let message = "你选择的是\(self.items[indexPath.row])"
+//        print(String(self.json[indexPath.row]))
         
-        // 1、初始化最简单的 Alert
-        let alert1 = UIAlertController(title: "提示", message: message, preferredStyle: UIAlertControllerStyle.Alert)
-        self.presentViewController(alert1, animated: true, completion: nil)
-        let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.Default){
-            (action: UIAlertAction!) -> Void in
-            
-        }
-        alert1.addAction(okAction)
+        self.base.cacheSetString("msg", value: String(self.json[indexPath.row]))
+//        self.base.cacheSetJson("jsonmsg", value: self.json[indexPath.row])
+        self.presentViewController(TableDetail(), animated: false, completion: nil)
+//        self.pushViewController(TableDetail(), animated: true)
       
     }
     
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+//        print("owqu")
+//        
+//        var nextController: UIViewController?
+//        switch UIDevice.currentDevice().systemVersion.compare("8.0.0", options: NSStringCompareOptions.NumericSearch) {
+//        case .OrderedSame, .OrderedDescending:
+//            nextController = (segue.destinationViewController as! UINavigationController).topViewController
+//        case .OrderedAscending:
+//            nextController = segue.destinationViewController
+//        }
+//        
+//        if let indexPath = tableView!.indexPathForSelectedRow {
+//            let row = indexPath.row
+//            var nextJson: JSON = JSON.null
+//            switch self.json.type {
+//            case .Array:
+//                nextJson = self.json[row]
+//            case .Dictionary where row < self.json.dictionaryValue.count:
+//                let key = Array(self.json.dictionaryValue.keys)[row]
+//                if let value = self.json.dictionary?[key] {
+//                    nextJson = value
+//                }
+//            default:
+//                print("")
+//            }
+//            (nextController as! TableDetail).json = nextJson
+//            print(nextJson)
+//        }
+//    }
+    
     func initDate() {
-        let url = "https://172.16.3.51:8443/user/query?name=super"
-        HttpSwift.get(url, params: ["get": "POST Network"], callback: { (data, response, error) -> Void in
-            let string = data
-            
+        let url = "http://172.16.3.66:8080/goods/query"
+        HttpSwift.post(url, callback: { (data, response, error) -> Void in
+  
             //使用guard判断
-            guard error != nil else{
-                print(data)
-                print("GET带参数 请求成功 \(string)")
+            guard error != nil else {
+                
+//                print("GET带参数 请求成功")
+                if let dataFromString = data.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
+                    var oldJson = JSON(data: dataFromString)
+                   // print(oldJson)
+                    self.json = oldJson["list"]
+                    self.pager = oldJson["pager"]
+                    self.tableView?.reloadData()
+                }
+                
                 return
             }
         })
+        
+
+
+       
     }
+    
+    
+
+    
     
     func back() {
         self.dismissViewControllerAnimated(false, completion: nil)
+    }
+    
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
 }
