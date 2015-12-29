@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict><key>renwu</key><string>人物类</string>
+<key>qingai</key><string>情爱类</string>
+<key>shenghuo</key><string>生活类</string>
+<key>wupin</key><string>物品类</string>
+<key>shenti</key><string>身体类</string>
+<key>dongzhiwu</key><string>动物类</string>
+<key>zhiwu</key><string>植物类</string>
+<key>guishen</key><string>鬼神类</string>
+<key>jianzhu</key><string>建筑类</string>
+<key>ziran</key><string>自然类</string>
+</dict>
+</plist>
