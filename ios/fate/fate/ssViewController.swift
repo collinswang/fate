@@ -15,13 +15,15 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     var pickerView: UIPickerView!
     var txt = UITextField()
     var phone = UITextField()
-    var info = UITextView()
+//    var info = UITextView()
     
     var month = [String]()
 //    var week = [String]()
     var year = [String]()
     var hour = [String]()
     var day = [String]()
+    
+    var base: bassClass = bassClass()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,47 +52,48 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         let navigationBar = UINavigationBar()
         navigationBar.frame = CGRectMake(0, 0, width, 60)
         navigationBar.pushNavigationItem(self.navigationItem, animated: false)
+        navigationBar.backgroundColor = UIColor.redColor()
         
         self.view.addSubview(navigationBar)
            
         
-        txt.frame = CGRectMake(width/2-100, 100, 200, 30)
+        let pant = UIView(frame: CGRectMake(10, 100, width-20, 50))
+        pant.backgroundColor = UIColor.lightGrayColor()
+        txt.frame = CGRectMake(width/2-100, 0, 200, 50)
         txt.placeholder = "请输入用户名"
-        txt.layer.cornerRadius = 4.0
-        txt.layer.borderWidth = 1
-        self.view.addSubview(txt)
+//        txt.layer.cornerRadius = 4.0
+//        txt.layer.borderWidth = 1
+        pant.addSubview(txt)
+        self.view.addSubview(pant)
         
         
-        
-        phone.frame = CGRectMake(width/2-100, 150, 200, 30)
+        let Ppant = UIView(frame: CGRectMake(10, 170, width-20, 50))
+        Ppant.backgroundColor = UIColor.lightGrayColor()
+        phone.frame = CGRectMake(width/2-100, 0, 200, 50)
         phone.placeholder = "请输入手机号码"
-        phone.layer.cornerRadius = 4.0
-        phone.layer.borderWidth = 1
+//        phone.layer.cornerRadius = 4.0
+//        phone.layer.borderWidth = 1
 //        phone.borderStyle = UITextBorderStyle.RoundedRect;
-        self.view.addSubview(phone)
+        Ppant.addSubview(phone)
+        self.view.addSubview(Ppant)
         
-        pickerView = UIPickerView(frame: CGRectMake(0, 200, width, 50))
+        pickerView = UIPickerView(frame: CGRectMake(10, 250, width-20, 50))
         pickerView.delegate = self
         pickerView.dataSource = self
+        pickerView.backgroundColor = UIColor.lightGrayColor()
         self.view.addSubview(pickerView)
         pickerView.selectRow(indexYear!, inComponent: 0, animated: false)
         
         let btn = UIButton(type: .System)
-        btn.frame = CGRectMake(width/2-100, 350, 200, 30)
+        btn.frame = CGRectMake(10, 350, width-20, 50)
         btn.setTitle("算命", forState: UIControlState.Normal)
-        btn.layer.cornerRadius = 4.0
-        btn.layer.borderWidth = 1
+        btn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        btn.backgroundColor = UIColor.lightGrayColor()
+        
+//        btn.layer.cornerRadius = 4.0
+//        btn.layer.borderWidth = 1
         btn.addTarget(self, action: "getFate", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(btn)
-        
-        info.frame = CGRectMake(20, 400, width-40, 300)
-        info.layer.cornerRadius = 4.0
-        info.layer.borderWidth = 1
-        info.editable = false
-        info.layer.borderColor = UIColor.purpleColor().CGColor
-        self.view.addSubview(info)
-        
-      
         
         self.view.backgroundColor = UIColor.whiteColor();
 
@@ -104,7 +107,8 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     
     
     func back() {
-        self.dismissViewControllerAnimated(false, completion: nil)
+//        self.dismissViewControllerAnimated(false, completion: nil)
+        self.presentViewController(ViewController(), animated: false, completion: nil)
     }
     
     func getFate() {
@@ -119,7 +123,10 @@ class ssViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         
         
 //        let msg = txt.text! + phone.text! + year[yearIndex] + month[monthIndex] + day[weekIndex] + hour[hourIndex]
-        info.text = resu.msg + "\n" + resu.res
+//        let msg = resu.msg + "\n" + resu.res
+        base.cacheSetString("res", value: resu.res)
+        base.cacheSetString("title", value: resu.msg)
+        self.presentViewController(ChengguResultViewController(), animated: false, completion: nil)
 //        print(resu)
     }
     

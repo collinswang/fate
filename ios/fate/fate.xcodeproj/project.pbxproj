@@ -8,7 +8,65 @@
 
 /* Begin PBXBuildFile section */
 		910E947F1C1516C5005A9FAB /* TableDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E947E1C1516C5005A9FAB /* TableDetail.swift */; };
+		913050DD1C30DAA4008C2D1A /* ZhougongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913050DC1C30DAA4008C2D1A /* ZhougongViewController.swift */; };
+		913050DF1C3100D2008C2D1A /* ZhougongListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913050DE1C3100D2008C2D1A /* ZhougongListViewController.swift */; };
+		913050E11C3101FC008C2D1A /* ZhougongDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913050E01C3101FC008C2D1A /* ZhougongDetailViewController.swift */; };
+		913051211C311C72008C2D1A /* detail-dongzhiwu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9130510C1C311C72008C2D1A /* detail-dongzhiwu.plist */; };
+		913051221C311C72008C2D1A /* detail-guishen.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9130510D1C311C72008C2D1A /* detail-guishen.plist */; };
+		913051231C311C72008C2D1A /* detail-jianzhu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9130510E1C311C72008C2D1A /* detail-jianzhu.plist */; };
+		913051241C311C72008C2D1A /* detail-qingai.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9130510F1C311C72008C2D1A /* detail-qingai.plist */; };
+		913051251C311C72008C2D1A /* detail-renwu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913051101C311C72008C2D1A /* detail-renwu.plist */; };
+		913051261C311C72008C2D1A /* detail-shenghuo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913051111C311C72008C2D1A /* detail-shenghuo.plist */; };
+		913051271C311C72008C2D1A /* detail-shenti.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913051121C311C72008C2D1A /* detail-shenti.plist */; };
+		913051281C311C72008C2D1A /* detail-wupin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913051131C311C72008C2D1A /* detail-wupin.plist */; };
+		913051291C311C72008C2D1A /* detail-zhiwu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913051141C311C72008C2D1A /* detail-zhiwu.plist */; };
+		9130512A1C311C72008C2D1A /* detail-ziran.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913051151C311C72008C2D1A /* detail-ziran.plist */; };
+		9130512B1C311C72008C2D1A /* dongzhiwu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913051161C311C72008C2D1A /* dongzhiwu.plist */; };
+		9130512C1C311C72008C2D1A /* guishen.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913051171C311C72008C2D1A /* guishen.plist */; };
+		9130512D1C311C72008C2D1A /* head.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913051181C311C72008C2D1A /* head.plist */; };
+		9130512E1C311C72008C2D1A /* jianzhu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913051191C311C72008C2D1A /* jianzhu.plist */; };
+		9130512F1C311C72008C2D1A /* qingai.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9130511A1C311C72008C2D1A /* qingai.plist */; };
+		913051301C311C72008C2D1A /* renwu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9130511B1C311C72008C2D1A /* renwu.plist */; };
+		913051311C311C72008C2D1A /* shenghuo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9130511C1C311C72008C2D1A /* shenghuo.plist */; };
+		913051321C311C72008C2D1A /* shenti.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9130511D1C311C72008C2D1A /* shenti.plist */; };
+		913051331C311C72008C2D1A /* wupin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9130511E1C311C72008C2D1A /* wupin.plist */; };
+		913051341C311C72008C2D1A /* zhiwu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9130511F1C311C72008C2D1A /* zhiwu.plist */; };
+		913051351C311C72008C2D1A /* ziran.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913051201C311C72008C2D1A /* ziran.plist */; };
+		9139BCDF1C3254F300F67917 /* 《补阙真言》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCCE1C3254F300F67917 /* 《补阙真言》.html */; };
+		9139BCE01C3254F300F67917 /* 《大悲咒》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCCF1C3254F300F67917 /* 《大悲咒》.html */; };
+		9139BCE11C3254F300F67917 /* 《大吉祥天女咒》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCD01C3254F300F67917 /* 《大吉祥天女咒》.html */; };
+		9139BCE21C3254F300F67917 /* 《功德宝山神咒》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCD11C3254F300F67917 /* 《功德宝山神咒》.html */; };
+		9139BCE31C3254F300F67917 /* 《观音灵感真言》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCD21C3254F300F67917 /* 《观音灵感真言》.html */; };
+		9139BCE41C3254F300F67917 /* 《解结咒》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCD31C3254F300F67917 /* 《解结咒》.html */; };
+		9139BCE51C3254F300F67917 /* 《净口业真言》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCD41C3254F300F67917 /* 《净口业真言》.html */; };
+		9139BCE61C3254F300F67917 /* 《礼佛大忏悔文》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCD51C3254F300F67917 /* 《礼佛大忏悔文》.html */; };
+		9139BCE71C3254F300F67917 /* 《六字真言》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCD61C3254F300F67917 /* 《六字真言》.html */; };
+		9139BCE81C3254F300F67917 /* 《七佛灭罪真言》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCD71C3254F300F67917 /* 《七佛灭罪真言》.html */; };
+		9139BCE91C3254F300F67917 /* 《如意宝轮王陀罗尼》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCD81C3254F300F67917 /* 《如意宝轮王陀罗尼》.html */; };
+		9139BCEA1C3254F300F67917 /* 《圣无量寿决定光明王陀罗尼》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCD91C3254F300F67917 /* 《圣无量寿决定光明王陀罗尼》.html */; };
+		9139BCEB1C3254F300F67917 /* 《往生咒》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCDA1C3254F300F67917 /* 《往生咒》.html */; };
+		9139BCEC1C3254F300F67917 /* 《消灾吉祥神咒》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCDB1C3254F300F67917 /* 《消灾吉祥神咒》.html */; };
+		9139BCED1C3254F300F67917 /* 《心经》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCDC1C3254F300F67917 /* 《心经》.html */; };
+		9139BCEE1C3254F300F67917 /* 《药师灌顶真言》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCDD1C3254F300F67917 /* 《药师灌顶真言》.html */; };
+		9139BCEF1C3254F300F67917 /* 《准提神咒》.html in Resources */ = {isa = PBXBuildFile; fileRef = 9139BCDE1C3254F300F67917 /* 《准提神咒》.html */; };
+		9162238C1C2A42E300C57B18 /* ChangFateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162238B1C2A42E300C57B18 /* ChangFateViewController.swift */; };
+		9162238E1C2A492400C57B18 /* ScriptureList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162238D1C2A492400C57B18 /* ScriptureList.swift */; };
+		916223901C2A70BF00C57B18 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162238F1C2A70BF00C57B18 /* ListTableViewCell.swift */; };
+		917A9F961C3E4C1800193E24 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917A9F951C3E4C1800193E24 /* QRViewController.swift */; };
+		917A9FA01C3E521B00193E24 /* ocr_albums.png in Resources */ = {isa = PBXBuildFile; fileRef = 917A9F971C3E521B00193E24 /* ocr_albums.png */; };
+		917A9FA11C3E521B00193E24 /* ocr_albums@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917A9F981C3E521B00193E24 /* ocr_albums@2x.png */; };
+		917A9FA21C3E521B00193E24 /* ocr_flash-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 917A9F991C3E521B00193E24 /* ocr_flash-off.png */; };
+		917A9FA31C3E521B00193E24 /* ocr_flash-off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917A9F9A1C3E521B00193E24 /* ocr_flash-off@2x.png */; };
+		917A9FA41C3E521B00193E24 /* ocr_flash-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 917A9F9B1C3E521B00193E24 /* ocr_flash-on.png */; };
+		917A9FA51C3E521B00193E24 /* ocr_flash-on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917A9F9C1C3E521B00193E24 /* ocr_flash-on@2x.png */; };
+		917A9FA61C3E521B00193E24 /* ocrBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 917A9F9D1C3E521B00193E24 /* ocrBack.png */; };
+		917A9FA71C3E521B00193E24 /* ocrBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917A9F9E1C3E521B00193E24 /* ocrBack@2x.png */; };
+		917A9FA81C3E521B00193E24 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917A9F9F1C3E521B00193E24 /* pick_bg@2x.png */; };
 		91A5F04B1C167E6C0044A458 /* TableViewControllerBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A5F04A1C167E6C0044A458 /* TableViewControllerBack.swift */; };
+		91B481161C27C45800A3AB16 /* qian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91B481151C27C45800A3AB16 /* qian.jpg */; };
+		91B481191C27C53D00A3AB16 /* ShakeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B481181C27C53D00A3AB16 /* ShakeResult.swift */; };
+		91B4811B1C27CC6E00A3AB16 /* GuanyinResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B4811A1C27CC6E00A3AB16 /* GuanyinResultView.swift */; };
+		91B4811D1C27E11100A3AB16 /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B4811C1C27E11100A3AB16 /* StringUtil.swift */; };
 		91C505721C16688500A47350 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C505711C16688500A47350 /* SwiftyJSON.swift */; };
 		91D22B501C0E936C00F873CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D22B4F1C0E936C00F873CB /* AppDelegate.swift */; };
 		91D22B521C0E936C00F873CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D22B511C0E936C00F873CB /* ViewController.swift */; };
@@ -21,7 +79,7 @@
 		91D22B801C0E945400F873CB /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D22B7E1C0E945400F873CB /* AnimationController.swift */; };
 		91D22B871C0E946A00F873CB /* baseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D22B811C0E946A00F873CB /* baseClass.swift */; };
 		91D22B881C0E946A00F873CB /* chenggusuanming.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91D22B821C0E946A00F873CB /* chenggusuanming.plist */; };
-		91D22B891C0E946A00F873CB /* EFAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D22B831C0E946A00F873CB /* EFAnimationViewController.swift */; };
+		91D22B891C0E946A00F873CB /* ChengguResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D22B831C0E946A00F873CB /* ChengguResultViewController.swift */; };
 		91D22B8A1C0E946A00F873CB /* GuanyinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D22B841C0E946A00F873CB /* GuanyinViewController.swift */; };
 		91D22B8B1C0E946A00F873CB /* hander.png in Resources */ = {isa = PBXBuildFile; fileRef = 91D22B851C0E946A00F873CB /* hander.png */; };
 		91D22B8C1C0E946A00F873CB /* icon in Resources */ = {isa = PBXBuildFile; fileRef = 91D22B861C0E946A00F873CB /* icon */; };
@@ -58,7 +116,65 @@
 
 /* Begin PBXFileReference section */
 		910E947E1C1516C5005A9FAB /* TableDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDetail.swift; sourceTree = "<group>"; };
+		913050DC1C30DAA4008C2D1A /* ZhougongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZhougongViewController.swift; sourceTree = "<group>"; };
+		913050DE1C3100D2008C2D1A /* ZhougongListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZhougongListViewController.swift; sourceTree = "<group>"; };
+		913050E01C3101FC008C2D1A /* ZhougongDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZhougongDetailViewController.swift; sourceTree = "<group>"; };
+		9130510C1C311C72008C2D1A /* detail-dongzhiwu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "detail-dongzhiwu.plist"; path = "zhougong/detail-dongzhiwu.plist"; sourceTree = "<group>"; };
+		9130510D1C311C72008C2D1A /* detail-guishen.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "detail-guishen.plist"; path = "zhougong/detail-guishen.plist"; sourceTree = "<group>"; };
+		9130510E1C311C72008C2D1A /* detail-jianzhu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "detail-jianzhu.plist"; path = "zhougong/detail-jianzhu.plist"; sourceTree = "<group>"; };
+		9130510F1C311C72008C2D1A /* detail-qingai.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "detail-qingai.plist"; path = "zhougong/detail-qingai.plist"; sourceTree = "<group>"; };
+		913051101C311C72008C2D1A /* detail-renwu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "detail-renwu.plist"; path = "zhougong/detail-renwu.plist"; sourceTree = "<group>"; };
+		913051111C311C72008C2D1A /* detail-shenghuo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "detail-shenghuo.plist"; path = "zhougong/detail-shenghuo.plist"; sourceTree = "<group>"; };
+		913051121C311C72008C2D1A /* detail-shenti.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "detail-shenti.plist"; path = "zhougong/detail-shenti.plist"; sourceTree = "<group>"; };
+		913051131C311C72008C2D1A /* detail-wupin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "detail-wupin.plist"; path = "zhougong/detail-wupin.plist"; sourceTree = "<group>"; };
+		913051141C311C72008C2D1A /* detail-zhiwu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "detail-zhiwu.plist"; path = "zhougong/detail-zhiwu.plist"; sourceTree = "<group>"; };
+		913051151C311C72008C2D1A /* detail-ziran.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "detail-ziran.plist"; path = "zhougong/detail-ziran.plist"; sourceTree = "<group>"; };
+		913051161C311C72008C2D1A /* dongzhiwu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = dongzhiwu.plist; path = zhougong/dongzhiwu.plist; sourceTree = "<group>"; };
+		913051171C311C72008C2D1A /* guishen.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = guishen.plist; path = zhougong/guishen.plist; sourceTree = "<group>"; };
+		913051181C311C72008C2D1A /* head.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = head.plist; path = zhougong/head.plist; sourceTree = "<group>"; };
+		913051191C311C72008C2D1A /* jianzhu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = jianzhu.plist; path = zhougong/jianzhu.plist; sourceTree = "<group>"; };
+		9130511A1C311C72008C2D1A /* qingai.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = qingai.plist; path = zhougong/qingai.plist; sourceTree = "<group>"; };
+		9130511B1C311C72008C2D1A /* renwu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = renwu.plist; path = zhougong/renwu.plist; sourceTree = "<group>"; };
+		9130511C1C311C72008C2D1A /* shenghuo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = shenghuo.plist; path = zhougong/shenghuo.plist; sourceTree = "<group>"; };
+		9130511D1C311C72008C2D1A /* shenti.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = shenti.plist; path = zhougong/shenti.plist; sourceTree = "<group>"; };
+		9130511E1C311C72008C2D1A /* wupin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = wupin.plist; path = zhougong/wupin.plist; sourceTree = "<group>"; };
+		9130511F1C311C72008C2D1A /* zhiwu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = zhiwu.plist; path = zhougong/zhiwu.plist; sourceTree = "<group>"; };
+		913051201C311C72008C2D1A /* ziran.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ziran.plist; path = zhougong/ziran.plist; sourceTree = "<group>"; };
+		9139BCCE1C3254F300F67917 /* 《补阙真言》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《补阙真言》.html"; path = "jingwen/《补阙真言》.html"; sourceTree = "<group>"; };
+		9139BCCF1C3254F300F67917 /* 《大悲咒》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《大悲咒》.html"; path = "jingwen/《大悲咒》.html"; sourceTree = "<group>"; };
+		9139BCD01C3254F300F67917 /* 《大吉祥天女咒》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《大吉祥天女咒》.html"; path = "jingwen/《大吉祥天女咒》.html"; sourceTree = "<group>"; };
+		9139BCD11C3254F300F67917 /* 《功德宝山神咒》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《功德宝山神咒》.html"; path = "jingwen/《功德宝山神咒》.html"; sourceTree = "<group>"; };
+		9139BCD21C3254F300F67917 /* 《观音灵感真言》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《观音灵感真言》.html"; path = "jingwen/《观音灵感真言》.html"; sourceTree = "<group>"; };
+		9139BCD31C3254F300F67917 /* 《解结咒》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《解结咒》.html"; path = "jingwen/《解结咒》.html"; sourceTree = "<group>"; };
+		9139BCD41C3254F300F67917 /* 《净口业真言》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《净口业真言》.html"; path = "jingwen/《净口业真言》.html"; sourceTree = "<group>"; };
+		9139BCD51C3254F300F67917 /* 《礼佛大忏悔文》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《礼佛大忏悔文》.html"; path = "jingwen/《礼佛大忏悔文》.html"; sourceTree = "<group>"; };
+		9139BCD61C3254F300F67917 /* 《六字真言》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《六字真言》.html"; path = "jingwen/《六字真言》.html"; sourceTree = "<group>"; };
+		9139BCD71C3254F300F67917 /* 《七佛灭罪真言》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《七佛灭罪真言》.html"; path = "jingwen/《七佛灭罪真言》.html"; sourceTree = "<group>"; };
+		9139BCD81C3254F300F67917 /* 《如意宝轮王陀罗尼》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《如意宝轮王陀罗尼》.html"; path = "jingwen/《如意宝轮王陀罗尼》.html"; sourceTree = "<group>"; };
+		9139BCD91C3254F300F67917 /* 《圣无量寿决定光明王陀罗尼》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《圣无量寿决定光明王陀罗尼》.html"; path = "jingwen/《圣无量寿决定光明王陀罗尼》.html"; sourceTree = "<group>"; };
+		9139BCDA1C3254F300F67917 /* 《往生咒》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《往生咒》.html"; path = "jingwen/《往生咒》.html"; sourceTree = "<group>"; };
+		9139BCDB1C3254F300F67917 /* 《消灾吉祥神咒》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《消灾吉祥神咒》.html"; path = "jingwen/《消灾吉祥神咒》.html"; sourceTree = "<group>"; };
+		9139BCDC1C3254F300F67917 /* 《心经》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《心经》.html"; path = "jingwen/《心经》.html"; sourceTree = "<group>"; };
+		9139BCDD1C3254F300F67917 /* 《药师灌顶真言》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《药师灌顶真言》.html"; path = "jingwen/《药师灌顶真言》.html"; sourceTree = "<group>"; };
+		9139BCDE1C3254F300F67917 /* 《准提神咒》.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "《准提神咒》.html"; path = "jingwen/《准提神咒》.html"; sourceTree = "<group>"; };
+		9162238B1C2A42E300C57B18 /* ChangFateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangFateViewController.swift; sourceTree = "<group>"; };
+		9162238D1C2A492400C57B18 /* ScriptureList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptureList.swift; sourceTree = "<group>"; };
+		9162238F1C2A70BF00C57B18 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		917A9F951C3E4C1800193E24 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		917A9F971C3E521B00193E24 /* ocr_albums.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ocr_albums.png; path = icon/ocr_albums.png; sourceTree = "<group>"; };
+		917A9F981C3E521B00193E24 /* ocr_albums@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ocr_albums@2x.png"; path = "icon/ocr_albums@2x.png"; sourceTree = "<group>"; };
+		917A9F991C3E521B00193E24 /* ocr_flash-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ocr_flash-off.png"; path = "icon/ocr_flash-off.png"; sourceTree = "<group>"; };
+		917A9F9A1C3E521B00193E24 /* ocr_flash-off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ocr_flash-off@2x.png"; path = "icon/ocr_flash-off@2x.png"; sourceTree = "<group>"; };
+		917A9F9B1C3E521B00193E24 /* ocr_flash-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ocr_flash-on.png"; path = "icon/ocr_flash-on.png"; sourceTree = "<group>"; };
+		917A9F9C1C3E521B00193E24 /* ocr_flash-on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ocr_flash-on@2x.png"; path = "icon/ocr_flash-on@2x.png"; sourceTree = "<group>"; };
+		917A9F9D1C3E521B00193E24 /* ocrBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ocrBack.png; path = icon/ocrBack.png; sourceTree = "<group>"; };
+		917A9F9E1C3E521B00193E24 /* ocrBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ocrBack@2x.png"; path = "icon/ocrBack@2x.png"; sourceTree = "<group>"; };
+		917A9F9F1C3E521B00193E24 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pick_bg@2x.png"; path = "icon/pick_bg@2x.png"; sourceTree = "<group>"; };
 		91A5F04A1C167E6C0044A458 /* TableViewControllerBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerBack.swift; sourceTree = "<group>"; };
+		91B481151C27C45800A3AB16 /* qian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = qian.jpg; sourceTree = "<group>"; };
+		91B481181C27C53D00A3AB16 /* ShakeResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeResult.swift; sourceTree = "<group>"; };
+		91B4811A1C27CC6E00A3AB16 /* GuanyinResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuanyinResultView.swift; sourceTree = "<group>"; };
+		91B4811C1C27E11100A3AB16 /* StringUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtil.swift; sourceTree = "<group>"; };
 		91C505711C16688500A47350 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		91D22B4C1C0E936C00F873CB /* fate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D22B4F1C0E936C00F873CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +193,7 @@
 		91D22B7E1C0E945400F873CB /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 		91D22B811C0E946A00F873CB /* baseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = baseClass.swift; sourceTree = "<group>"; };
 		91D22B821C0E946A00F873CB /* chenggusuanming.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = chenggusuanming.plist; sourceTree = "<group>"; };
-		91D22B831C0E946A00F873CB /* EFAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFAnimationViewController.swift; sourceTree = "<group>"; };
+		91D22B831C0E946A00F873CB /* ChengguResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChengguResultViewController.swift; sourceTree = "<group>"; };
 		91D22B841C0E946A00F873CB /* GuanyinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuanyinViewController.swift; sourceTree = "<group>"; };
 		91D22B851C0E946A00F873CB /* hander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hander.png; sourceTree = "<group>"; };
 		91D22B861C0E946A00F873CB /* icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icon; sourceTree = "<group>"; };
@@ -121,6 +237,107 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91254C0C1C29423C00B8F826 /* table */ = {
+			isa = PBXGroup;
+			children = (
+				91D22B911C0E947600F873CB /* TableViewController.swift */,
+				910E947E1C1516C5005A9FAB /* TableDetail.swift */,
+				91A5F04A1C167E6C0044A458 /* TableViewControllerBack.swift */,
+			);
+			name = table;
+			sourceTree = "<group>";
+		};
+		91254C0D1C2942F900B8F826 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				91FAFDEA1C0EC66B00555652 /* Date.swift */,
+				91B4811C1C27E11100A3AB16 /* StringUtil.swift */,
+				91D22B9B1C0E94D300F873CB /* ChengguHelper.swift */,
+				91FAFDE81C0E9BC400555652 /* HttpSwift.swift */,
+				91D22B811C0E946A00F873CB /* baseClass.swift */,
+				91D22B8D1C0E947500F873CB /* LarnDate.swift */,
+				91C505711C16688500A47350 /* SwiftyJSON.swift */,
+				9162238F1C2A70BF00C57B18 /* ListTableViewCell.swift */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		91254C0F1C2943E300B8F826 /* chenggu */ = {
+			isa = PBXGroup;
+			children = (
+				91D22B831C0E946A00F873CB /* ChengguResultViewController.swift */,
+				91D22B901C0E947600F873CB /* ssViewController.swift */,
+			);
+			name = chenggu;
+			sourceTree = "<group>";
+		};
+		913050C51C30D3C2008C2D1A /* zhougong */ = {
+			isa = PBXGroup;
+			children = (
+				913050DE1C3100D2008C2D1A /* ZhougongListViewController.swift */,
+				913050E01C3101FC008C2D1A /* ZhougongDetailViewController.swift */,
+				913050DC1C30DAA4008C2D1A /* ZhougongViewController.swift */,
+				9130510C1C311C72008C2D1A /* detail-dongzhiwu.plist */,
+				9130510D1C311C72008C2D1A /* detail-guishen.plist */,
+				9130510E1C311C72008C2D1A /* detail-jianzhu.plist */,
+				9130510F1C311C72008C2D1A /* detail-qingai.plist */,
+				913051101C311C72008C2D1A /* detail-renwu.plist */,
+				913051111C311C72008C2D1A /* detail-shenghuo.plist */,
+				913051121C311C72008C2D1A /* detail-shenti.plist */,
+				913051131C311C72008C2D1A /* detail-wupin.plist */,
+				913051141C311C72008C2D1A /* detail-zhiwu.plist */,
+				913051151C311C72008C2D1A /* detail-ziran.plist */,
+				913051161C311C72008C2D1A /* dongzhiwu.plist */,
+				913051171C311C72008C2D1A /* guishen.plist */,
+				913051181C311C72008C2D1A /* head.plist */,
+				913051191C311C72008C2D1A /* jianzhu.plist */,
+				9130511A1C311C72008C2D1A /* qingai.plist */,
+				9130511B1C311C72008C2D1A /* renwu.plist */,
+				9130511C1C311C72008C2D1A /* shenghuo.plist */,
+				9130511D1C311C72008C2D1A /* shenti.plist */,
+				9130511E1C311C72008C2D1A /* wupin.plist */,
+				9130511F1C311C72008C2D1A /* zhiwu.plist */,
+				913051201C311C72008C2D1A /* ziran.plist */,
+			);
+			name = zhougong;
+			sourceTree = "<group>";
+		};
+		9162238A1C2A42A700C57B18 /* changeFate */ = {
+			isa = PBXGroup;
+			children = (
+				9139BCCE1C3254F300F67917 /* 《补阙真言》.html */,
+				9139BCCF1C3254F300F67917 /* 《大悲咒》.html */,
+				9139BCD01C3254F300F67917 /* 《大吉祥天女咒》.html */,
+				9139BCD11C3254F300F67917 /* 《功德宝山神咒》.html */,
+				9139BCD21C3254F300F67917 /* 《观音灵感真言》.html */,
+				9139BCD31C3254F300F67917 /* 《解结咒》.html */,
+				9139BCD41C3254F300F67917 /* 《净口业真言》.html */,
+				9139BCD51C3254F300F67917 /* 《礼佛大忏悔文》.html */,
+				9139BCD61C3254F300F67917 /* 《六字真言》.html */,
+				9139BCD71C3254F300F67917 /* 《七佛灭罪真言》.html */,
+				9139BCD81C3254F300F67917 /* 《如意宝轮王陀罗尼》.html */,
+				9139BCD91C3254F300F67917 /* 《圣无量寿决定光明王陀罗尼》.html */,
+				9139BCDA1C3254F300F67917 /* 《往生咒》.html */,
+				9139BCDB1C3254F300F67917 /* 《消灾吉祥神咒》.html */,
+				9139BCDC1C3254F300F67917 /* 《心经》.html */,
+				9139BCDD1C3254F300F67917 /* 《药师灌顶真言》.html */,
+				9139BCDE1C3254F300F67917 /* 《准提神咒》.html */,
+				9162238B1C2A42E300C57B18 /* ChangFateViewController.swift */,
+				9162238D1C2A492400C57B18 /* ScriptureList.swift */,
+			);
+			name = changeFate;
+			sourceTree = "<group>";
+		};
+		91B481171C27C4B400A3AB16 /* guanyin */ = {
+			isa = PBXGroup;
+			children = (
+				91D22B841C0E946A00F873CB /* GuanyinViewController.swift */,
+				91B481181C27C53D00A3AB16 /* ShakeResult.swift */,
+				91B4811A1C27CC6E00A3AB16 /* GuanyinResultView.swift */,
+			);
+			name = guanyin;
+			sourceTree = "<group>";
+		};
 		91D22B431C0E936C00F873CB = {
 			isa = PBXGroup;
 			children = (
@@ -145,31 +362,26 @@
 		91D22B4E1C0E936C00F873CB /* fate */ = {
 			isa = PBXGroup;
 			children = (
-				91C505711C16688500A47350 /* SwiftyJSON.swift */,
+				913050C51C30D3C2008C2D1A /* zhougong */,
+				91254C0D1C2942F900B8F826 /* util */,
 				91D22B7E1C0E945400F873CB /* AnimationController.swift */,
 				91D22B7D1C0E945400F873CB /* AlertViewControlller.swift */,
-				91D22B9B1C0E94D300F873CB /* ChengguHelper.swift */,
-				91D22B8D1C0E947500F873CB /* LarnDate.swift */,
 				91FAFDE61C0E9AB100555652 /* support */,
 				91FAFDE71C0E9AD700555652 /* imges */,
-				91D22B901C0E947600F873CB /* ssViewController.swift */,
-				91D22B911C0E947600F873CB /* TableViewController.swift */,
-				91A5F04A1C167E6C0044A458 /* TableViewControllerBack.swift */,
-				910E947E1C1516C5005A9FAB /* TableDetail.swift */,
-				91FAFDE81C0E9BC400555652 /* HttpSwift.swift */,
+				91254C0C1C29423C00B8F826 /* table */,
 				91D22B931C0E947600F873CB /* ZhuanPanController.swift */,
-				91D22B811C0E946A00F873CB /* baseClass.swift */,
-				91D22B831C0E946A00F873CB /* EFAnimationViewController.swift */,
-				91D22B841C0E946A00F873CB /* GuanyinViewController.swift */,
+				9162238A1C2A42A700C57B18 /* changeFate */,
+				91B481171C27C4B400A3AB16 /* guanyin */,
 				91FAFDEC1C0EDA2100555652 /* StrutsTest.swift */,
 				91FAFDEE1C0EDB7900555652 /* MyPlayground.playground */,
 				91D22B861C0E946A00F873CB /* icon */,
 				91D22B4F1C0E936C00F873CB /* AppDelegate.swift */,
 				91D22B511C0E936C00F873CB /* ViewController.swift */,
+				917A9F951C3E4C1800193E24 /* QRViewController.swift */,
+				91254C0F1C2943E300B8F826 /* chenggu */,
 				91D22B531C0E936C00F873CB /* Main.storyboard */,
 				91D22B561C0E936C00F873CB /* Assets.xcassets */,
 				91D22B581C0E936C00F873CB /* LaunchScreen.storyboard */,
-				91FAFDEA1C0EC66B00555652 /* Date.swift */,
 			);
 			path = fate;
 			sourceTree = "<group>";
@@ -205,6 +417,16 @@
 		91FAFDE71C0E9AD700555652 /* imges */ = {
 			isa = PBXGroup;
 			children = (
+				917A9F971C3E521B00193E24 /* ocr_albums.png */,
+				917A9F981C3E521B00193E24 /* ocr_albums@2x.png */,
+				917A9F991C3E521B00193E24 /* ocr_flash-off.png */,
+				917A9F9A1C3E521B00193E24 /* ocr_flash-off@2x.png */,
+				917A9F9B1C3E521B00193E24 /* ocr_flash-on.png */,
+				917A9F9C1C3E521B00193E24 /* ocr_flash-on@2x.png */,
+				917A9F9D1C3E521B00193E24 /* ocrBack.png */,
+				917A9F9E1C3E521B00193E24 /* ocrBack@2x.png */,
+				917A9F9F1C3E521B00193E24 /* pick_bg@2x.png */,
+				91B481151C27C45800A3AB16 /* qian.jpg */,
 				91D22B8F1C0E947600F873CB /* prise.png */,
 				91D22B851C0E946A00F873CB /* hander.png */,
 				91D22B921C0E947600F873CB /* zhuanpan.png */,
@@ -319,15 +541,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9139BCDF1C3254F300F67917 /* 《补阙真言》.html in Resources */,
+				913051341C311C72008C2D1A /* zhiwu.plist in Resources */,
+				9139BCE01C3254F300F67917 /* 《大悲咒》.html in Resources */,
+				913051271C311C72008C2D1A /* detail-shenti.plist in Resources */,
+				913051261C311C72008C2D1A /* detail-shenghuo.plist in Resources */,
+				913051311C311C72008C2D1A /* shenghuo.plist in Resources */,
+				917A9FA31C3E521B00193E24 /* ocr_flash-off@2x.png in Resources */,
+				917A9FA51C3E521B00193E24 /* ocr_flash-on@2x.png in Resources */,
+				917A9FA61C3E521B00193E24 /* ocrBack.png in Resources */,
+				9139BCE51C3254F300F67917 /* 《净口业真言》.html in Resources */,
+				913051291C311C72008C2D1A /* detail-zhiwu.plist in Resources */,
 				91D22B951C0E947600F873CB /* Linqian.plist in Resources */,
+				9139BCE21C3254F300F67917 /* 《功德宝山神咒》.html in Resources */,
+				913051231C311C72008C2D1A /* detail-jianzhu.plist in Resources */,
+				9139BCEB1C3254F300F67917 /* 《往生咒》.html in Resources */,
+				9130512B1C311C72008C2D1A /* dongzhiwu.plist in Resources */,
+				913051221C311C72008C2D1A /* detail-guishen.plist in Resources */,
 				91D22B5A1C0E936C00F873CB /* LaunchScreen.storyboard in Resources */,
+				9139BCE71C3254F300F67917 /* 《六字真言》.html in Resources */,
 				91D22B8C1C0E946A00F873CB /* icon in Resources */,
 				91D22B571C0E936C00F873CB /* Assets.xcassets in Resources */,
+				913051301C311C72008C2D1A /* renwu.plist in Resources */,
+				9130512D1C311C72008C2D1A /* head.plist in Resources */,
+				9139BCE31C3254F300F67917 /* 《观音灵感真言》.html in Resources */,
+				9139BCEE1C3254F300F67917 /* 《药师灌顶真言》.html in Resources */,
+				913051321C311C72008C2D1A /* shenti.plist in Resources */,
 				91D22B991C0E947600F873CB /* zhuanpan.png in Resources */,
+				9139BCEA1C3254F300F67917 /* 《圣无量寿决定光明王陀罗尼》.html in Resources */,
+				917A9FA81C3E521B00193E24 /* pick_bg@2x.png in Resources */,
+				9139BCE61C3254F300F67917 /* 《礼佛大忏悔文》.html in Resources */,
+				913051211C311C72008C2D1A /* detail-dongzhiwu.plist in Resources */,
+				9139BCE41C3254F300F67917 /* 《解结咒》.html in Resources */,
+				9139BCE91C3254F300F67917 /* 《如意宝轮王陀罗尼》.html in Resources */,
+				917A9FA11C3E521B00193E24 /* ocr_albums@2x.png in Resources */,
+				913051251C311C72008C2D1A /* detail-renwu.plist in Resources */,
+				9130512A1C311C72008C2D1A /* detail-ziran.plist in Resources */,
+				9139BCEC1C3254F300F67917 /* 《消灾吉祥神咒》.html in Resources */,
 				91D22B8B1C0E946A00F873CB /* hander.png in Resources */,
+				917A9FA21C3E521B00193E24 /* ocr_flash-off.png in Resources */,
+				9130512E1C311C72008C2D1A /* jianzhu.plist in Resources */,
+				9130512F1C311C72008C2D1A /* qingai.plist in Resources */,
+				917A9FA71C3E521B00193E24 /* ocrBack@2x.png in Resources */,
+				91B481161C27C45800A3AB16 /* qian.jpg in Resources */,
+				9130512C1C311C72008C2D1A /* guishen.plist in Resources */,
 				91D22B881C0E946A00F873CB /* chenggusuanming.plist in Resources */,
 				91D22B551C0E936C00F873CB /* Main.storyboard in Resources */,
+				913051331C311C72008C2D1A /* wupin.plist in Resources */,
+				9139BCED1C3254F300F67917 /* 《心经》.html in Resources */,
+				917A9FA01C3E521B00193E24 /* ocr_albums.png in Resources */,
+				9139BCEF1C3254F300F67917 /* 《准提神咒》.html in Resources */,
+				913051241C311C72008C2D1A /* detail-qingai.plist in Resources */,
 				91D22B961C0E947600F873CB /* prise.png in Resources */,
+				913051351C311C72008C2D1A /* ziran.plist in Resources */,
+				917A9FA41C3E521B00193E24 /* ocr_flash-on.png in Resources */,
+				9139BCE11C3254F300F67917 /* 《大吉祥天女咒》.html in Resources */,
+				9139BCE81C3254F300F67917 /* 《七佛灭罪真言》.html in Resources */,
+				913051281C311C72008C2D1A /* detail-wupin.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,17 +628,27 @@
 				91D22B801C0E945400F873CB /* AnimationController.swift in Sources */,
 				91D22B981C0E947600F873CB /* TableViewController.swift in Sources */,
 				91D22B971C0E947600F873CB /* ssViewController.swift in Sources */,
+				91B4811D1C27E11100A3AB16 /* StringUtil.swift in Sources */,
 				91FAFDF01C0EEAC200555652 /* Test.swift in Sources */,
 				91FAFDE91C0E9BC400555652 /* HttpSwift.swift in Sources */,
-				91D22B891C0E946A00F873CB /* EFAnimationViewController.swift in Sources */,
+				913050DD1C30DAA4008C2D1A /* ZhougongViewController.swift in Sources */,
+				916223901C2A70BF00C57B18 /* ListTableViewCell.swift in Sources */,
+				91D22B891C0E946A00F873CB /* ChengguResultViewController.swift in Sources */,
 				910E947F1C1516C5005A9FAB /* TableDetail.swift in Sources */,
 				91D22B941C0E947600F873CB /* LarnDate.swift in Sources */,
+				91B481191C27C53D00A3AB16 /* ShakeResult.swift in Sources */,
+				91B4811B1C27CC6E00A3AB16 /* GuanyinResultView.swift in Sources */,
+				913050E11C3101FC008C2D1A /* ZhougongDetailViewController.swift in Sources */,
 				91D22B9C1C0E94D300F873CB /* ChengguHelper.swift in Sources */,
+				917A9F961C3E4C1800193E24 /* QRViewController.swift in Sources */,
+				9162238C1C2A42E300C57B18 /* ChangFateViewController.swift in Sources */,
 				91FAFDEB1C0EC66B00555652 /* Date.swift in Sources */,
 				91D22B521C0E936C00F873CB /* ViewController.swift in Sources */,
 				91D22B7F1C0E945400F873CB /* AlertViewControlller.swift in Sources */,
+				9162238E1C2A492400C57B18 /* ScriptureList.swift in Sources */,
 				91D22B501C0E936C00F873CB /* AppDelegate.swift in Sources */,
 				91C505721C16688500A47350 /* SwiftyJSON.swift in Sources */,
+				913050DF1C3100D2008C2D1A /* ZhougongListViewController.swift in Sources */,
 				91FAFDED1C0EDA2100555652 /* StrutsTest.swift in Sources */,
 				91D22B9A1C0E947600F873CB /* ZhuanPanController.swift in Sources */,
 			);

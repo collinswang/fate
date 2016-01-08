@@ -31,7 +31,7 @@ class ZhuanPanController: UIViewController {
         let navigationBar = UINavigationBar()
         navigationBar.frame = CGRectMake(0, 0, width, 60)
         navigationBar.pushNavigationItem(self.navigationItem, animated: false)
-        
+        navigationBar.backgroundColor = UIColor.redColor()
         self.view.addSubview(navigationBar)
 
         //背景
